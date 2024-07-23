@@ -1,0 +1,25 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixins";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $bgbackground;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  font-family: "Poppins";
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}

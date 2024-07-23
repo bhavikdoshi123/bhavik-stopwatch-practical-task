@@ -1,0 +1,11 @@
+//import base
+@import "../scss/base/base";
+
+//import abstract
+@import "../scss/abstracts/variable";
+@import "../scss/abstracts/mixins";
+
+//import components
+@import "../scss/components/event";
+
+@import "~bootstrap/scss/bootstrap";

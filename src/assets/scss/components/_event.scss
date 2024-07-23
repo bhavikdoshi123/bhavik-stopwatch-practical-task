@@ -1,0 +1,94 @@
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid $border;
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 6px 20px $boxshadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0px 10px 30px $boxshadow;
+  }
+
+  .display {
+    font-size: 3.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: $border;
+    text-shadow: 2px 2px 2px $border;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $border;
+    }
+  }
+  .controls {
+    display: flex;
+    gap: 0px;
+
+    button {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 13px 30px;
+      margin: 5px;
+      min-width: 85px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.5s ease;
+    }
+  }
+
+  .start-button {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primaryhover;
+    }
+  }
+
+  .stop-button {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryhover;
+    }
+  }
+
+  .reset-button {
+    background-color: $tertiary;
+
+    &:hover {
+      background-color: $tertiaryhover;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .display {
+    font-size: 3rem;
+  }
+
+  .controls button {
+    font-size: 1rem;
+    padding: 10px 8px !important;
+    min-width: 90px;
+  }
+
+  .controls {
+    gap: 0px;
+  }
+
+  .stopwatch {
+    max-width: 330px;
+  }
+}
